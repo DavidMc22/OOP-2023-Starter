@@ -6,27 +6,23 @@ import processing.core.PApplet;
 
 public class DANI extends PApplet {
 
-	
-
 	public DANI() {
 	}
 
 	public void settings() {
 		size(1000, 1000);
-		//fullScreen(SPAN);
+		// fullScreen(SPAN);
 	}
 
-    String[] sonnet;
+	String[] sonnet;
 
-    public String[] writeSonnet()
-    {
-        return null;
-    }
+	public String[] writeSonnet() {
+		return null;
+	}
 
 	public void setup() {
 		colorMode(HSB);
 
-       
 	}
 
 	public void keyPressed() {
@@ -36,34 +32,38 @@ public class DANI extends PApplet {
 	float off = 0;
 	private String line;
 
-	public void draw() 
-    {
+	public void draw() {
 		background(0);
 		fill(255);
 		noStroke();
 		textSize(20);
-        textAlign(CENTER, CENTER);
-        
+		textAlign(CENTER, CENTER);
+
 	}
 
-
-	public void loadFile()
-	{
+	public void loadFile() {
 
 		String[] lines = loadStrings("small.txt"); // Load a text file into a String array
-		
-		for(int i = 0 ; i < lines.length; i++)
-		{
+
+		for (int i = 0; i < lines.length; i++) {
 			split(lines, ' '); // Split a string into an array of words
-			replaceAll("[^\\w\\s]",""); // Remove punction characters
-			toLowerCase(); // Convert a string to lower case 
+			replaceAll("[^\\w\\s]", ""); // Remove punction characters
+			toLowerCase(); // Convert a string to lower case
 
 		}
-		
-		
-		
-		
-	
+
+	}
+
+	public static void printModel()
+	{
+
+		System.out.println("i: love(2) love: star(1) is(1) tu(1) star: trek(1) trek: is: love(1) tu: dublin(1) dublin:");	
+
+	}
+
+	public static void main(String[] args) {
+		printModel();
+
 	}
 
 	private int replaceAll(String string, String string2) {
@@ -77,18 +77,5 @@ public class DANI extends PApplet {
 	private int split(String[] lines, char c) {
 		return 0;
 	}
-
-	
-
-	
-
-
-
-
-
-
-
-
-
 
 }
