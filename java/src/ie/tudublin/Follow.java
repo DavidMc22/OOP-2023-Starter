@@ -28,10 +28,12 @@ public class Follow extends PApplet{
         this.count = count;
     }
 
-    //Tostring
+    //To string
     @Override
     public String toString() {
         return "Follow [word=" + word + ", count=" + count + "]";
+    }
+    public void replaceAll(String string, String string2) {
     }
 
     

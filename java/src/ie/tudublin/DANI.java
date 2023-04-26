@@ -2,6 +2,8 @@ package ie.tudublin;
 
 import java.util.ArrayList;
 
+import javax.sound.midi.spi.SoundbankReader;
+
 import processing.core.PApplet;
 
 public class DANI extends PApplet {
@@ -14,9 +16,10 @@ public class DANI extends PApplet {
 		// fullScreen(SPAN);
 	}
 
-	String[] sonnet;
+	 String[] sonnet;
 
 	public String[] writeSonnet() {
+		
 		return null;
 	}
 
@@ -38,6 +41,7 @@ public class DANI extends PApplet {
 		noStroke();
 		textSize(20);
 		textAlign(CENTER, CENTER);
+		
 
 	}
 
@@ -46,9 +50,10 @@ public class DANI extends PApplet {
 		String[] sonnet = loadStrings("small.txt"); // Load a text file into a String array
 
 		for (int i = 0; i < sonnet.length; i++) {
-			split(sonnet, ' '); // Split a string into an array of words
+			split(line, ' '); // Split a string into an array of words
 			replaceAll("[^\\w\\s]", ""); // Remove punction characters
 			toLowerCase(); // Convert a string to lower case
+			println(sonnet[i]);
 
 		}
 
@@ -56,18 +61,16 @@ public class DANI extends PApplet {
 
 	public static void printModel()
 	{
-
+		
 		System.out.println("i: love(2) love: star(1) is(1) tu(1) star: trek(1) trek: is: love(1) tu: dublin(1) dublin:");	
 		
 	}
 
-	public void writeSonnet()
-	{
-
-	}
+	
 
 	public static void main(String[] args) {
 		printModel();
+		
 
 	}
 
@@ -76,10 +79,6 @@ public class DANI extends PApplet {
 	}
 
 	private int toLowerCase() {
-		return 0;
-	}
-
-	private int split(String[] lines, char c) {
 		return 0;
 	}
 
