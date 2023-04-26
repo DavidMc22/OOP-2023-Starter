@@ -3,7 +3,9 @@ package ie.tudublin;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Word {
+import processing.core.PApplet;
+
+public class Word extends PApplet {
     
     private String word;
 

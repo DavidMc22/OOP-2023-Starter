@@ -43,10 +43,10 @@ public class DANI extends PApplet {
 
 	public void loadFile() {
 
-		String[] lines = loadStrings("small.txt"); // Load a text file into a String array
+		String[] sonnet = loadStrings("small.txt"); // Load a text file into a String array
 
-		for (int i = 0; i < lines.length; i++) {
-			split(lines, ' '); // Split a string into an array of words
+		for (int i = 0; i < sonnet.length; i++) {
+			split(sonnet, ' '); // Split a string into an array of words
 			replaceAll("[^\\w\\s]", ""); // Remove punction characters
 			toLowerCase(); // Convert a string to lower case
 
@@ -58,6 +58,11 @@ public class DANI extends PApplet {
 	{
 
 		System.out.println("i: love(2) love: star(1) is(1) tu(1) star: trek(1) trek: is: love(1) tu: dublin(1) dublin:");	
+		
+	}
+
+	public void writeSonnet()
+	{
 
 	}
 

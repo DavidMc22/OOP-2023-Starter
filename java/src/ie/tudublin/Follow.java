@@ -1,6 +1,8 @@
 package ie.tudublin;
 
-public class Follow {
+import processing.core.PApplet;
+
+public class Follow extends PApplet{
     
     private String word;
     private int count;
