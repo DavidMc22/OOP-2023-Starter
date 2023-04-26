@@ -10,7 +10,6 @@ public class Word {
     ArrayList<Follow>follow = new ArrayList<Follow>();
 
 
-
     //getters and setters for the array list
     public ArrayList<Follow> getFollow() {
         return follow;
